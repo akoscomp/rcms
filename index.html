@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>ETCO SERVER DATA IMPORT</title>
+<link rel="stylesheet" type="text/css" href="etcon.css" />
+<link rel="shortcut icon" href="http://netmon/wol/wol_inc/favicon.ico">
+<script language="JavaScript" src="pagehelper.js" type="text/javascript"></script>
+</head>
+<body>
+<center><div class="container" id="page">
+<br>
+<h2><font color='darkblue'>DIEL data import / ETCO server</font></h2>
+ <hr size="1" color="#8e9cbf" noshade>
+<br>
+<table>
+<tr>
+<td>
+<div class="begin"><strong>Remove</strong> Folders:</div>
+<div class="boutput" >
+  <button name="remove2011" id="remove2011" type="button" onclick="run('remove2011');"> &nbsp;2011&nbsp; </button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button name="remove2012" id="remove2012" type="button" onclick="run('remove2012');"> &nbsp;2012&nbsp; </button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button name="remove2013" id="remove2013" type="button" onclick="run('remove2013');"> &nbsp;2013&nbsp; </button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button name="removeall" id="removeall" type="button" onclick="run('removeall');">All years/firms</button>&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+</td>
+</tr><tr><td> </td></tr>
+<tr>
+<td>
+<div class="begin"><strong>Import</strong> Folders:</div>
+<div class="boutput" >
+  <button name="import2011" id="import2011" type="button" onclick="run('copy2011');"> &nbsp;2011&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button name="import2012" id="import2012" type="button" onclick="run('copy2012');">&nbsp;2012&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button name="import2013" id="import2013" type="button" onclick="run('copy2013');">&nbsp;2013&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button name="importall" id="importall" type="button" onclick="run('copyall');">All years/firms</button>&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</td>
+</tr><tr><td> </td></tr>
+<tr>
+<td>
+<div class="begin">Refresh Ouput:</div>
+<div class="boutput" >
+  <button title="The list of current DIEL folders on local server" name="listlocal" id="listlocal" type="button" onclick="run('listlocal');">LOCAL DIRs</button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button title="Codespring Filtered content from DIEL/etco server" name="listremote" id="listremote" type="button" onclick="run('listremote');">REMOTE DIRs</button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button title="Folders + modify date listed from both location" name="listall" id="listall" type="button" onclick="run('listall');"> COMPARE </button>&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</td>
+</tr>
+</table>
+<br>
+<hr size="1" color="#8e9cbf" noshade>
+<div id="mess">
+</div>
+<table>
+<tr><div id="btime"></div></tr>
+<tr><div id="atime"></div></tr>
+</table>
+<br>
+<div class="begin">Progress/Ouput:</div><div id="output" class="output" >&nbsp;&nbsp;Please select one of the above <strong> actions </strong> and click that button.</div>
+<br><br><br>
+</div>
+</body>
+</html>
