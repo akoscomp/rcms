@@ -10,82 +10,137 @@ root {
     display: block;
 }
 
-label,a, body,div
+body
 {
-  /* font-family : Arial, Helvetica, sans-serif; */
-  font-family: Verdana;
-  font-size : 12px;
-  background: #dae2f5;
+	font-family: Arial, sans-serif;/*ha nicn arial, hasznalja a kovetketzot, stb*/
+	font-size: 0.8em;/*minden kissebb lesz, 80%*/
+        width:600px;
 }
 
-input[type=text], textarea
+ul
 {
-  font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #dae2f5;
+    height: 0.8em;
+    font-size: 4em;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    background-color: #fff;
+    overflow: hidden;
+    border-bottom: 1px solid red;
 }
 
-div.output
-{ border:1px solid gray;
-  margin:0px;
-  padding: 8px;
-  float: left;
-  width: 510px;
-  background: #edf4fc;
-  text-align:left;
-}
-
-div.button
-{ border:1px solid gray;
-  margin:0px;
-  padding: 4px;
-  float: left;
-  width: 430px;
-  height: 25px;
-  background: #edf4fc;
-  text-align:center;
-  vertical-align: middle;
-}
-
-div.title
-{ border:1px solid gray;
-  float: left;
-  padding:4px;
-  width: 111px;
-  height: 24px;
-  text-align:center;
-  vertical-align: middle;
-}
-
-.err
-{ font-family : Verdana, Helvetica, sans-serif;
-  font-size : 12px;
-  color: red;
-  background:#edf4fc;
-
-}
-.wait
-{ font-family : Verdana, Helvetica, sans-serif;
-  color: darkblue;
-  font-size : 12px;
-  /*  text-decoration: blink; */
-}
-.info
+li
 {
-  font-family : Arial, Helvetica, sans-serif;
-  font-size : 10px;
-  color: darkblue;
+    display: inline-block;
+    color: #ff910b;
+    padding-left: 1em;
+    vertical-align: bottom;
+    margin-top: -1em;
+    cursor: cell;
 }
-.infomess
+
+    li.selected
+    {
+        color: #f44;
+        margin-bottom: 0.2em;
+    }
+
+    li:hover
+    {
+        color: #f00;
+        margin-bottom: 0.2em;
+    }
+
+
+table
 {
-  font-family : Verdana, Helvetica, sans-serif;
-  font-size : 12px;
-  color: darkblue;
+	padding: 0;
+	margin: 0 0 3px 0;
+	border-spacing: 1px;
+	border-collapse: separate;
+	border: 1px solid #e0e0e0;
+	background: #fff;
+	width: 100%; 
+}
+
+thead
+{
+	background: #e7e7e7;
+	cursor: pointer;
+}
+
+thead td
+{
+    	font: 11px sans-serif;
+	font-weight: bold;
+}
+
+td
+{
+	padding: 2px;
+	margin: 0px;
+	font: 12px sans-serif;
+}
+
+tr:nth-child(even)
+{
+	background: #fff;
+	cursor: pointer;
+}
+
+tr:nth-child(odd)
+{
+	background: #f7f7f7;
+	cursor: pointer;
+}
+
+tbody tr:hover
+{
+    background: hotpink;
+}
+
+tfoot
+{
+    	background: #f0f0f0;
+}
+.tomato-grid .sortasc {
+	background-image: url(up.gif);
+	background-position: 97% 60%;
+	background-repeat: no-repeat;
+}
+.tomato-grid .sortdes {
+	background-image: url(dn.gif);
+	background-position: 97% 80%;
+	background-repeat: no-repeat;
 }
 
 
-.container
-{
-  text-align:center;
-  width: 650px; height: 340px; padding:5px;
-  background-position: center;
-  background-color: #edf4fc;
+#refresh-button {
+	width: 80px;
+}
+#refresh-time {
+	width: 120px;
+}
+#refresh-spinner {
+	visibility: hidden;
+	vertical-align: middle;
+}
+
+input[type='button'] {
+	color: #000;
+	background: #f7f7f7;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+input[type='button'][disabled] {
+	color: #aaa;
+}
+input[type='button']:hover {
+	background: #BF6060;
+	color: #fff;
+}
+input,
+select {
+	font: 12px sans-serif;
 }

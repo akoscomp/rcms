@@ -11,34 +11,52 @@
         <?php
         // put your code here
         ?>
-      <center>
-        <div class="container" id="page">
-        <h2><font color='darkblue'>Liceul Teoretic „Gheorghe Lazăr”</font></h2>
-        <hr size="1" color="#8e9cbf" noshade>
-        <table>
-            <tr>
-                <td>
-                    <div class="title"><strong>Restart:</strong></div>
-                    <div class="button">
-                        <button name="restart_info1" type="button" onclick="run('restart_info1');">Info 1</button>
-                        <button name="restart_info3" type="button" onclick="run('restart_info3');">Info 3</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="title"><strong>Shutdown:</strong></div>
-                    <div class="button">
-                        <button name="shutdown_info1" type="button" onclick="run('shutdown_info1');">Info 1</button>
-                        <button name="shutdown_info3" type="button" onclick="run('shutdown_info3');">Info 3</button>
-                    </div>
-                </td>
-            </tr>
+        <script>
+            function refreshList() {
+                alert('Frissul a lista');
+            }
+
+            function getIP() {
+                var gepAdatok;
+                gepAdatok = {ipAddress: '10.0.0.1', hostName: 'cs54-na' };
+                alert(gepAdatok.hostName);
+            }
+            
+        </script>
+        
+        <ul>
+            <li class="selected">I1</li>
+            <li>I2</li>
+            <li>I3</li>
+        </ul>
+
+        <table id="complist" cellspacing="1">
+            <thead>
+                <tr>
+                    <th>IP address</th><th>Computer name</th><th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="getIP()" id="cs54-na">
+                    <td class="ip">10.0.0.1</td>
+                    <td class="host">cs54-na</td>
+                    <td>stop</td>
+                </tr>
+                <tr onclick="getIP()" id="cs54-na2">
+                    <td class="ip">10.0.0.2</td>
+                    <td class="host">cs54-na2</td>
+                    <td>stop</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            <th colspan="3">Finish</th>
+            </tfoot>
         </table>
-        <hr size="1" color="#8e9cbf" noshade>
-        <div class="title">Progress/Ouput:</div>
-        <div id="output" class="output" >&nbsp;&nbsp;Please select one of the above <strong> actions </strong> and click that button.</div>
+
+        <div style="float:right">
+            <img id="spin" style="vertical-align: middle; visibility: hidden;" src="spin.gif"></img>
+            <input id="refreshb" type="button" onclick="refreshList()" value="Refresh"></input>
         </div>
-      </center>
+
     </body>
 </html>
