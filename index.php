@@ -25,9 +25,15 @@
         </script>
         
         <ul>
-            <li class="selected">I1</li>
-            <li>I2</li>
-            <li>I3</li>
+        <?php
+            $action = './script.sh listrooms';
+            $out = shell_exec($action);
+            for($i=1; $i <= 3 ; $i++) {
+                print '<li>I1</li>';
+            }
+            print $out;
+            print $action;
+        ?>
         </ul>
 
         <table id="complist" cellspacing="1">
