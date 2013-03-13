@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOSTLIST="hostlist"
+HOSTLIST="hostlist.lst"
 CHECKLIST=""
 
 while read HOSTLINE

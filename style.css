@@ -15,6 +15,10 @@ body
 	font-family: Arial, sans-serif;/*ha nicn arial, hasznalja a kovetketzot, stb*/
 	font-size: 0.8em;/*minden kissebb lesz, 80%*/
         width:600px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
 }
 
 ul
@@ -144,3 +148,12 @@ input,
 select {
 	font: 12px sans-serif;
 }
+
+.stoped {
+	background: red;
+}
+
+.started {
+	background: green;
+}
+

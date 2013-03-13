@@ -19,9 +19,7 @@ function listrooms() {
 }
 
 function hostlist() {
-    ROOM=$2
-echo $ROOM
-echo "vacdva"
+    ROOM=$1
     while read HOSTLINE
       do
         set $HOSTLINE
@@ -39,6 +37,6 @@ echo "vacdva"
 
 case "$1" in
 	listrooms) listrooms;;
-	hostlist) hostlist;;
+	hostlist) hostlist $2;;
 esac
 

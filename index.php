@@ -16,10 +16,10 @@
 		alert('Frissul a lista');
 	    }
 
-	    function getIP() {
-		var gepAdatok;
+	    function getIP(oObject) {
+		var id = oObject.id;
 		gepAdatok = {ipAddress: '10.0.0.1', hostName: 'cs54-na' };
-		alert(gepAdatok.hostName);
+		alert(id);
 	    }
 
 	</script>
@@ -43,21 +43,18 @@
 	    </thead>
 	    <tbody>
 	    <?php
-		$action = './script hostlist';
+		$action = './script.sh hostlist info1';
 		$out = shell_exec($action);
-		print $out;
-//		foreach ()
+		$hosts = explode(" ", $out);
+		while (list($key, $value) = each($hosts)) {
+		    print '<tr onclick="getIP(this)" id="'.$hosts[$key].'">';
+		    print '<td class="ip">'.$value.'</td>';
+		    print '<td class="host">'.$hosts[$key + 1].'</td>';
+		    print '<td class="stoped">Stoped</td>';
+		    print '</tr>';
+		    unset($hosts[$key + 1]);
+		}
 	    ?>
-		<tr onclick="getIP()" id="cs54-na">
-		    <td class="ip">10.0.0.1</td>
-		    <td class="host">cs54-na</td>
-		    <td>stop</td>
-		</tr>
-		<tr onclick="getIP()" id="cs54-na2">
-		    <td class="ip">10.0.0.2</td>
-		    <td class="host">cs54-na2</td>
-		    <td>stop</td>
-		</tr>
 	    </tbody>
 	    <tfoot>
 	    <th colspan="3">Finish</th>
