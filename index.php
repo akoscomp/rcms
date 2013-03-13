@@ -28,11 +28,10 @@
         <?php
             $action = './script.sh listrooms';
             $out = shell_exec($action);
-            for($i=1; $i <= 3 ; $i++) {
-                print '<li>I1</li>';
+	    $rooms = explode(" ", $out);
+            foreach ($rooms as &$room) {
+                print '<li>'.$room.'</li>';
             }
-            print $out;
-            print $action;
         ?>
         </ul>
 
