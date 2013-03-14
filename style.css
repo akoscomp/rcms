@@ -115,12 +115,12 @@ tfoot
     	background: #f0f0f0;
 }
 .tomato-grid .sortasc {
-	background-image: url(up.gif);
+	background-image: url(data/up.gif);
 	background-position: 97% 60%;
 	background-repeat: no-repeat;
 }
 .tomato-grid .sortdes {
-	background-image: url(dn.gif);
+	background-image: url(data/dn.gif);
 	background-position: 97% 80%;
 	background-repeat: no-repeat;
 }

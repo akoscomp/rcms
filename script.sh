@@ -1,7 +1,6 @@
 #!/bin/bash
 
-HOSTLIST="hostlist.lst"
-POWERONLIST=`./ping.sh`
+HOSTLIST="./data/hostlist.lst"
 
 function listrooms() {
 	while read HOSTLINE
