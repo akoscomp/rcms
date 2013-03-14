@@ -10,6 +10,10 @@
     <body>
 	<ul>
 	<?php
+	    include_once "config.php";
+	    include_once "initdb.php";
+
+
 	    $action = './script.sh listrooms';
 	    $out = shell_exec($action);
 	    $rooms = explode(" ", $out);
