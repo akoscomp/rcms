@@ -6,6 +6,7 @@
     </thead>
     <tbody>
     <?php
+    $room = "info3";
 	$action = './script.sh hostlist '.$room;
 	$out = shell_exec($action);
 	$hosts = explode(" ", $out);
