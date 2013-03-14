@@ -6,38 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<!--<link rel="shortcut icon" href="favicon.ico">-->
 	<script language="JavaScript" src="status.js" type="text/javascript"></script>
-    
-        <script>
-	    function getIP(oObject) {
-		var id = oObject.id;
-		gepAdatok = {ipAddress: '10.0.0.1', hostName: 'cs54-na' };
-		alert(id);
-	    }
-
-            function getServerText() {
-                var myurl = 'table.php';
-                var modurl = myurl + "?room=info3";
-                http.open("GET", modurl, true);
-                http.onreadystatechange = useHttpResponse;
-                http.send(null);
-            }
-            
-            function useHttpResponse() {
-                if (http.readyState == 4) {
-                    if(http.status == 200) {
-                        var mytext = http.responseText;
-                        document.getElementById('tableReturn').innerHTML = mytext;
-                    }
-                }
-                else
-                {
-                    document.getElementById('tableReturn').innerHTML = "semmi";
-                }
-            }
-        </script>
-    
     </head>
-    <body onLoad="getServerText();">
+    <body onLoad="getServerText()">
 	<ul>
 	<?php
 	    $action = './script.sh listrooms';
@@ -51,7 +21,7 @@
 
 	<div style="float:right">
 	    <img id="spin" style="vertical-align: middle; visibility: hidden;" src="spin.gif"></img>
-	    <input id="refreshb" type="button" onclick="getServerText();" value="Refresh"></input>
+	    <input id="refreshb" type="button" onclick="getServerText()" value="Refresh"></input>
 	</div>
         
         <div id="tableReturn"></div>

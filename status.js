@@ -3,19 +3,28 @@
  * and open the template in the editor.
  */
 
-function getXMLHTTPRequest() {
-	try {
-		req = new XMLHttpRequet();
-	} catch (err) {
-					req = false;
-				}
+function getIP(oObject) {
+    var id = oObject.id;
+    alert(id);
 }
 
-function getStatus() {
-	var myurl = "getstatus.php";
-	acction = "action";
-	var modurl = myrul+"?action="+action;
-	http.open("GET", modurl, true);
-	http.onreadystatechange = useHttpResponse;
-	http.send(null);
+function getServerText() {
+    var myurl = 'table.php';
+    var modurl = myurl + "?room=info3";
+    http.open("GET", modurl, true);
+    http.onreadystatechange = useHttpResponse;
+    http.send(null);
+}
+
+function useHttpResponse() {
+    if (http.readyState == 4) {
+        if(http.status == 200) {
+            var mytext = http.responseText;
+            document.getElementById('tableReturn').innerHTML = mytext;
+        }
+    }
+    else
+    {
+        document.getElementById('tableReturn').innerHTML = "semmi";
+    }
 }
