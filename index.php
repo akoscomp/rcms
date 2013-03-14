@@ -21,9 +21,9 @@
 
 	<div style="float:right">
 	    <img id="spin" style="vertical-align: middle; visibility: hidden;" src="spin.gif"></img>
-	    <input id="refreshb" type="button" onclick="getServerText()" value="Refresh"></input>
+	    <input id="refreshb" type="button" onclick="changeText()" value="Refresh"></input>
 	</div>
         
-        <div id="tableReturn"></div>
+        <div id="tableReturn">fdsaf</div>
     </body>
 </html>

@@ -3,6 +3,20 @@
  * and open the template in the editor.
  */
 
+function getXMLHTTPRequest() {
+    try {
+	req = new XMLHttpRequest();
+    } catch(err1) {
+	req = false;
+      }
+}
+
+var http = getXMLHTTPRequest();
+
+function changeText() }
+        document.getElementById('tableReturn').innerHTML = "semmi";
+}
+
 function getIP(oObject) {
     var id = oObject.id;
     alert(id);

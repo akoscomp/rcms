@@ -1,3 +1,7 @@
+<?php
+echo "response";
+?>
+
 <table id="complist" cellspacing="1">
     <thead>
 	<tr>
