@@ -3,42 +3,27 @@
  * and open the template in the editor.
  */
 
-function getXMLHTTPRequest() {
-    try {
-	req = new XMLHttpRequest();
-    } catch(err1) {
-	req = false;
-      }
-}
-
-var http = getXMLHTTPRequest();
-
-function changeText() }
-        document.getElementById('tableReturn').innerHTML = "semmi";
-}
-
-function getIP(oObject) {
-    var id = oObject.id;
-    alert(id);
-}
-
-function getServerText() {
-    var myurl = 'table.php';
-    var modurl = myurl + "?room=info3";
-    http.open("GET", modurl, true);
-    http.onreadystatechange = useHttpResponse;
-    http.send(null);
-}
-
-function useHttpResponse() {
-    if (http.readyState == 4) {
-        if(http.status == 200) {
-            var mytext = http.responseText;
-            document.getElementById('tableReturn').innerHTML = mytext;
-        }
-    }
-    else
+function getServerText(rObject)
+{
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-        document.getElementById('tableReturn').innerHTML = "semmi";
+    document.getElementById("tableReturn").innerHTML=xmlhttp.responseText;
     }
+  }
+xmlhttp.open("GET","table.php?room="+rObject.id,true);
+xmlhttp.send();
+}
+
+function getID(oObject) {
+    alert(oObject.id);
 }

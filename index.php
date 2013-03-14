@@ -7,23 +7,23 @@
 	<!--<link rel="shortcut icon" href="favicon.ico">-->
 	<script language="JavaScript" src="status.js" type="text/javascript"></script>
     </head>
-    <body onLoad="getServerText()">
+    <body>
 	<ul>
 	<?php
 	    $action = './script.sh listrooms';
 	    $out = shell_exec($action);
 	    $rooms = explode(" ", $out);
 	    foreach ($rooms as &$room) {
-		print '<li id="'.$room.'">'.$room.'</li>';
+		print '<li id="'.$room.'" onclick="getServerText(this)">'.$room.'</li>';
 	    }
 	?>
 	</ul>
 
+        <div id="tableReturn">Please wait...</div>
+
 	<div style="float:right">
 	    <img id="spin" style="vertical-align: middle; visibility: hidden;" src="spin.gif"></img>
-	    <input id="refreshb" type="button" onclick="changeText()" value="Refresh"></input>
+	    <input id="refreshb" type="button" onclick="getID(this)" value="Refresh"></input>
 	</div>
-        
-        <div id="tableReturn">fdsaf</div>
     </body>
 </html>

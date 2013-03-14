@@ -1,7 +1,3 @@
-<?php
-echo "response";
-?>
-
 <table id="complist" cellspacing="1">
     <thead>
 	<tr>
@@ -10,7 +6,7 @@ echo "response";
     </thead>
     <tbody>
     <?php
-    $room = "info3";
+    $room = $_GET["room"];
 	$action = './script.sh hostlist '.$room;
 	$out = shell_exec($action);
 	$hosts = explode(" ", $out);
