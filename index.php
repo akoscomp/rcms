@@ -14,9 +14,9 @@
 		alert(id);
 	    }
 
-            function getServerText(room) {
+            function getServerText() {
                 var myurl = 'table.php';
-                var modurl = myurl + "?room=" + room;
+                var modurl = myurl + "?room=info3";
                 http.open("GET", modurl, true);
                 http.onreadystatechange = useHttpResponse;
                 http.send(null);
@@ -31,7 +31,7 @@
                 }
                 else
                 {
-                    document.getElementById('tableReturn').innerHTML = "";
+                    document.getElementById('tableReturn').innerHTML = "semmi";
                 }
             }
         </script>
@@ -51,7 +51,7 @@
 
 	<div style="float:right">
 	    <img id="spin" style="vertical-align: middle; visibility: hidden;" src="spin.gif"></img>
-	    <input id="refreshb" type="button" onclick="getServerText('info3');" value="Refresh"></input>
+	    <input id="refreshb" type="button" onclick="getServerText();" value="Refresh"></input>
 	</div>
         
         <div id="tableReturn"></div>
