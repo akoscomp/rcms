@@ -35,15 +35,20 @@
 	?>
 	</ul>
 
+	<div style="float:right">
+	    <img id="spin" style="vertical-align: middle; visibility: hidden;" src="spin.gif"></img>
+	    <input id="refreshb" type="button" onclick="refreshList()" value="Refresh"></input>
+	</div>
+
 	<table id="complist" cellspacing="1">
 	    <thead>
 		<tr>
-		    <th>IP address</th><th>Computer name</th><th>Action</th>
+		    <th>IP address</th><th>Computer name</th><th>Status</th>
 		</tr>
 	    </thead>
 	    <tbody>
 	    <?php
-		$action = './script.sh hostlist info1';
+		$action = './script.sh hostlist info3';
 		$out = shell_exec($action);
 		$hosts = explode(" ", $out);
 		while (list($key, $value) = each($hosts)) {
@@ -61,10 +66,6 @@
 	    </tfoot>
 	</table>
 
-	<div style="float:right">
-	    <img id="spin" style="vertical-align: middle; visibility: hidden;" src="spin.gif"></img>
-	    <input id="refreshb" type="button" onclick="refreshList()" value="Refresh"></input>
-	</div>
 
     </body>
 </html>
