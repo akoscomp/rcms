@@ -1,5 +1,5 @@
 <?php
-    if ($db = new SQLite3('data/data.db')) {
+    if ($db = new SQLite3(:memory:)) {
 
         $query = @$db->query('CREATE TABLE IF NOT EXISTS roomlist (
 			id int PRIMARY KEY, 

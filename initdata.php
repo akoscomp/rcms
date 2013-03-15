@@ -1,6 +1,4 @@
 <?php
-  include_once "initdb.php";
-
   $file = file('data/hostlist.lst');
   $delimiter = ',';
 
@@ -29,7 +27,5 @@
          $die($results2);
       }
   }
-
-  $db = null;
 
 ?>

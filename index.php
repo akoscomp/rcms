@@ -12,13 +12,13 @@
 	<?php
 	    include_once "data/config.php";
 	    include_once "data/initdb.php";
-
+	    include_once "data/initdata.php";
 
 	    $action = './script.sh listrooms';
 	    $out = shell_exec($action);
 	    $rooms = explode(" ", $out);
 	    foreach ($rooms as &$room) {
-		print '<li id="'.$room.'" onclick="getServerText(this)">'.$room.'</li>';
+		   print '<li id="'.$room.'" onclick="getServerText(this)">'.$room.'</li>';
 	    }
 	?>
 	</ul>
