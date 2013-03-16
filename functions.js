@@ -20,10 +20,11 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("tableReturn").innerHTML=xmlhttp.responseText;
     }
   }
+
 xmlhttp.open("GET","table.php?room="+rObject.id,true);
 xmlhttp.send();
 }
 
-function getID(oObject) {
+function getIP(oObject) {
     alert(oObject.id);
 }

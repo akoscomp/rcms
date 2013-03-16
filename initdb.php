@@ -11,7 +11,8 @@
 			hostname text, 
 			room text, 
 			state text CHECK(state IN ("on", "off")), 
-			os text CHECK(os IN ("win", "lin")))');
+			os text CHECK(os IN ("win", "lin")),
+			mac text)');
     }
 
   $file = file('data/hostlist.lst');
@@ -20,8 +21,8 @@
   foreach ($file as $line_num => $line) {
     if ( is_numeric($line[0]) ) {
       $ary = explode($delimiter, str_replace(PHP_EOL, '', $line));
-      $query = 'INSERT INTO hostlist (ip, hostname, room, os) '.
-                  'VALUES ("'.$ary[0].'", "'.$ary[1].'", "'.$ary[2].'", "'.$ary[3].'")';
+      $query = 'INSERT INTO hostlist (ip, hostname, room, state, os, mac) '.
+                  'VALUES ("'.$ary[0].'", "'.$ary[1].'", "'.$ary[2].'", "off", "'.$ary[3].'", "'.$ary[4].'")';
       $results = $db->query($query);
       if (!$results) {
          $die($results);

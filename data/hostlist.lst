@@ -1,14 +1,13 @@
 #IP_address hostname groupname os
-10.0.0.1,statie401,info1,win
-10.0.0.2,statie402,info1,win
-10.0.0.3,statie403,info1,win
-10.0.0.31,statie501,info3,win
-10.0.0.32,statie502,info3,win
-10.0.0.33,statie503,info3,win
-10.0.0.34,statie504,info3,win
-10.0.0.35,statie505,info3,win
-10.0.0.126,server-ael,admin,win
-10.0.0.249,netmon,admin,win
-10.0.0.250,server,admin,win
+10.0.0.31,statie501,info3,win,00:00:00:00:00:00
+10.0.0.36,statie506,info3,win,00:1d:7d:51:0b:c9
+10.0.0.40,statie510,info3,win,00:1d:7d:51:09:93
+10.0.0.46,statie516,info3,win,00:1d:7d:51:08:f4
+10.0.0.52,statie522,info3,win,00:1d:7d:50:1a:17
+10.0.0.60,statie530,info3,win,00:21:97:1b:28:bd
+10.0.0.126,statie-ael,admin,win,00:21:97:1b:1f:e6
+10.0.0.107,,dhcp,win,00:1d:7d:51:76:f9
+10.0.0.241,,admin,lin,00:1c:10:13:b3:82
+10.0.0.250,server,admin,win,00:00:00:00:00:00
 
 

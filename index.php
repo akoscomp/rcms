@@ -9,16 +9,15 @@
     </head>
     <body>
 	<?php
-//$query = @$db->query('SELECT room FROM roomlist');
-//print_r $query;
-//	    $action = './script.sh listrooms';
-//	    $out = shell_exec($action);
-//	    $rooms = explode(" ", $out);
+	  include_once "scan.php";
+	  $db = new SQLite3('data/data.db');
+	  $roomlist = $db->query('SELECT room FROM roomlist');
+	  $db = null;
 	?>
 	<ul>
 	<?php
-	    foreach ($rooms as &$room) {
-		   print '<li id="'.$room.'" onclick="getServerText(this)">'.$room.'</li>';
+	    while ($row = $roomlist->fetchArray()) {
+		   print '<li id="'.$row["room"].'" onclick="getServerText(this)">'.$row["room"].'</li>';
 	    }
 	?>
 	</ul>
@@ -27,7 +26,7 @@
 
 	<div style="float:right">
 	    <img id="spin" style="vertical-align: middle; visibility: hidden;" src="img/spin.gif"></img>
-	    <input id="refreshb" type="button" onclick="getID(this)" value="Refresh"></input>
+	    <input id="refreshb" type="button" onclick="getServerText(this)" value="Refresh"></input>
 	</div>
     </body>
 </html>

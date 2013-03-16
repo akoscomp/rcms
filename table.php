@@ -5,18 +5,26 @@
 	</tr>
     </thead>
     <tbody>
-    <?php
-    $room = $_GET["room"];
-	$action = './script.sh hostlist '.$room;
-	$out = shell_exec($action);
-	$hosts = explode(" ", $out);
-	while (list($key, $value) = each($hosts)) {
-	    print '<tr onclick="getIP(this)" id="'.$hosts[$key].'">';
-	    print '<td class="ip">'.$value.'</td>';
-	    print '<td class="host">'.$hosts[$key + 1].'</td>';
-	    print '<td class="stoped">Stoped</td>';
+<?php
+	$room = $_GET["room"];
+	//$room = "info3";
+	$db = new SQLite3('data/data.db');
+        $results = $db->query('SELECT * FROM hostlist');
+ 	$db = null;
+	while ($row = $results->fetchArray()) {
+	  if ($row['room'] == $room) {
+	    print '<tr onclick="getIP(this)" id="'.$row["mac"].'">';
+	      print '<td class="ip">'.$row["ip"].'</td>';
+	      print '<td class="host">'.$row["hostname"].'</td>';
+	      if ($row['state'] == 'on') {
+		print '<td class="started">Run</td>';
+	      }	      
+	      else
+	      {
+		print '<td class="stoped">Stoped</td>';
+	      }
 	    print '</tr>';
-	    unset($hosts[$key + 1]);
+	  }
 	}
     ?>
     </tbody>
