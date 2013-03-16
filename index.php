@@ -2,21 +2,21 @@
 <html>
     <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title></title>
+	<title>rcms</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<!--<link rel="shortcut icon" href="favicon.ico">-->
 	<script language="JavaScript" src="functions.js" type="text/javascript"></script>
     </head>
     <body>
+	<?php
+//$query = @$db->query('SELECT room FROM roomlist');
+//print_r $query;
+//	    $action = './script.sh listrooms';
+//	    $out = shell_exec($action);
+//	    $rooms = explode(" ", $out);
+	?>
 	<ul>
 	<?php
-	    include_once "data/config.php";
-	    include_once "data/initdb.php";
-	    include_once "data/initdata.php";
-
-	    $action = './script.sh listrooms';
-	    $out = shell_exec($action);
-	    $rooms = explode(" ", $out);
 	    foreach ($rooms as &$room) {
 		   print '<li id="'.$room.'" onclick="getServerText(this)">'.$room.'</li>';
 	    }
