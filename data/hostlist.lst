@@ -1,13 +1,23 @@
 #IP_address hostname groupname os
-10.0.0.31,statie501,info3,win,00:00:00:00:00:00
+10.0.0.31,statie501,info3,win,00:1d:7d:50:fc:f0
+10.0.0.32,statie502,info3,win,00:1d:7d:51:06:c5
+10.0.0.33,statie503,info3,win,00:1d:7d:51:03:f7
+10.0.0.34,statie504,info3,win,00:1d:7d:51:7b:df
+10.0.0.35,statie505,info3,win,00:1d:7d:51:7d:85
 10.0.0.36,statie506,info3,win,00:1d:7d:51:0b:c9
+10.0.0.37,statie507,info3,win,00:1d:7d:51:09:8b
+10.0.0.38,statie508,info3,win,00:1d:7d:51:77:89
+10.0.0.39,statie509,info3,win,00:1c:25:d2:44:01
 10.0.0.40,statie510,info3,win,00:1d:7d:51:09:93
+10.0.0.41,statie511,info3,win,00:1d:7d:51:79:08
 10.0.0.46,statie516,info3,win,00:1d:7d:51:08:f4
 10.0.0.52,statie522,info3,win,00:1d:7d:50:1a:17
 10.0.0.60,statie530,info3,win,00:21:97:1b:28:bd
 10.0.0.126,statie-ael,admin,win,00:21:97:1b:1f:e6
 10.0.0.107,,dhcp,win,00:1d:7d:51:76:f9
 10.0.0.241,,admin,lin,00:1c:10:13:b3:82
-10.0.0.250,server,admin,win,00:00:00:00:00:00
+10.0.0.250,server,admin,win,0e:38:74:a8:f0:56
+10.0.0.252,proxmox,admin,lin,00:19:99:82:48:4e
+
 
 

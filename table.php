@@ -1,7 +1,7 @@
 <table id="complist" cellspacing="1">
     <thead>
 	<tr>
-	    <th>IP address</th><th>Computer name</th><th>Status</th>
+	    <th>IP address</th><th>Computer name</th><th>Status</th><th>Accion</th>
 	</tr>
     </thead>
     <tbody>
@@ -18,7 +18,7 @@
 	      print '<td class="host">'.$row["hostname"].'</td>';
 	      if ($row['state'] == 'on') {
 		print '<td class="started">Run</td>';
-	      }	      
+	      }
 	      else
 	      {
 		print '<td class="stoped">Stoped</td>';
@@ -32,3 +32,8 @@
     <th colspan="3">Finish</th>
     </tfoot>
 </table>
+
+<div style="float:right">
+    <img id="spin" style="vertical-align: middle; visibility: hidden;" src="img/spin.gif"></img>
+    <input id="<?php echo $room ?>" type="button" onclick="getServerText(this)" value="Refresh"></input>
+</div>

@@ -22,11 +22,7 @@
 	?>
 	</ul>
 
-        <div id="tableReturn">Please wait...</div>
+        <div id="tableReturn">Please select room...</div>
 
-	<div style="float:right">
-	    <img id="spin" style="vertical-align: middle; visibility: hidden;" src="img/spin.gif"></img>
-	    <input id="refreshb" type="button" onclick="getServerText(this)" value="Refresh"></input>
-	</div>
     </body>
 </html>
