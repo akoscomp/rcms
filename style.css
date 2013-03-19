@@ -20,13 +20,26 @@ body
 	margin-right: auto;
 	width: 70%;
 }
-
-div.tableReturn {
+/*
+#tableReturn {
     border: 1px solid gray;
     margin: 0px;
     padding: 8px;
-    float: left;
-    width: 600px;
+    float: center;
+    width: 400px;
+}
+*/
+#messageBox {
+    border: none;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    background-color: Lightgreen;
+}
+
+.hiddenlabel {
+    visibility:hidden
 }
 
 ul
@@ -107,7 +120,7 @@ tr:nth-child(odd)
 
 tbody tr:hover
 {
-    background: hotpink;
+    background: lightpink;
 }
 
 tfoot

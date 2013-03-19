@@ -13,7 +13,7 @@
  	$db = null;
 	while ($row = $results->fetchArray()) {
 	  if ($row['room'] == $room) {
-	    print '<tr onclick="getIP(this)" id="'.$row["mac"].'">';
+	    print '<tr id="'.$row["mac"].'">';
 	      print '<td class="ip">'.$row["ip"].'</td>';
 	      print '<td class="host">'.$row["hostname"].'</td>';
 	      if ($row['state'] == 'on') {
@@ -23,6 +23,7 @@
 	      {
 		print '<td class="stoped">Stoped</td>';
 	      }
+	      print '<td class="actionbutton"><span><input id="'.$row["mac"].'" type="button" onclick="start(this)" value="Start"></input></span>&nbsp;<span><input id="'.$row["mac"].'" type="button" onclick="stop(this)" value="Stop"></input></span></td>';
 	    print '</tr>';
 	  }
 	}
@@ -35,5 +36,5 @@
 
 <div style="float:right">
     <img id="spin" style="vertical-align: middle; visibility: hidden;" src="img/spin.gif"></img>
-    <input id="<?php echo $room ?>" type="button" onclick="getServerText(this)" value="Refresh"></input>
+    <input id="<?php echo $room ?>" data-room="<?php echo $room ?>" type="button" onclick="refresh(this)" value="Refresh"></input>
 </div>

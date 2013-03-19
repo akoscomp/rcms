@@ -22,7 +22,9 @@
 	?>
 	</ul>
 
+	<label id="ip" class="hiddenlabel"><?php echo $_SERVER['REMOTE_ADDR']; ?></label>
         <div id="tableReturn">Please select room...</div>
+        <div id="messageBox"></div>
 
     </body>
 </html>
