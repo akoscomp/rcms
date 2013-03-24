@@ -20,8 +20,8 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("tableReturn").innerHTML=xmlhttp.responseText;
     }
   }
-
-xmlhttp.open("GET","table.php?room="+rObject.id,true);
+var room = document.getElementById(rObject.id).getAttribute('data-room');
+xmlhttp.open("GET","table.php?room="+room,true);
 xmlhttp.send();
 }
 
@@ -48,12 +48,85 @@ xmlhttp.onreadystatechange=function()
   }
 
 var ip = document.getElementById("ip").innerHTML;
-
-xmlhttp.open("GET","wol.php?mac="+oObject.id+"&ip="+ip,true);
+xmlhttp.open("GET","start.php?mac="+oObject.id+"&ip="+ip,true);
 xmlhttp.send();
 }
 
-function stop() {
+function startall(oObject)
+{
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("messageBox").innerHTML=xmlhttp.responseText;
+    }
+  }
+
+var ip = document.getElementById("ip").innerHTML;
+var room = document.getElementById('stopall').getAttribute('data-room');
+xmlhttp.open("GET","startall.php?room="+room+"&ip="+ip,true);
+xmlhttp.send();
+}
+
+
+function stop(oObject)
+{
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("messageBox").innerHTML=xmlhttp.responseText;
+    }
+  }
+
+var ip = document.getElementById("ip").innerHTML;
+
+xmlhttp.open("GET","stop.php?hostname="+oObject.id+"&ip="+ip,true);
+xmlhttp.send();
+}
+
+function stopall(oObject)
+{
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("messageBox").innerHTML=xmlhttp.responseText;
+    }
+  }
+
+var ip = document.getElementById("ip").innerHTML;
+var room = document.getElementById('stopall').getAttribute('data-room');
+xmlhttp.open("GET","stopall.php?room="+room+"&ip="+ip,true);
+xmlhttp.send();
+}
+
+
+function stopold() {
 
  alert("Go and power off the computer!");
 }
@@ -78,8 +151,7 @@ xmlhttp.onreadystatechange=function()
     getServerText(oObject);
     }
   }
-
-xmlhttp.open("GET","scan.php?room="+oObject.id,true);
-//xmlhttp.open("GET","table.php?room="+rObject.id,true);
+var room = document.getElementById('refreshbt').getAttribute('data-room');
+xmlhttp.open("GET","scan.php?room="+room,true);
 xmlhttp.send();
 }

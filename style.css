@@ -14,7 +14,7 @@ body
 {
 	font-family: Arial, sans-serif;/*ha nicn arial, hasznalja a kovetketzot, stb*/
 	font-size: 0.8em;/*minden kissebb lesz, 80%*/
-        width:600px;
+        width:800px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -44,8 +44,8 @@ body
 
 ul
 {
-    height: 0.8em;
-    font-size: 4em;
+    height: 0.9em;
+    font-size: 2.5em;
     font-family: 'Times New Roman', serif;
     font-weight: bold;
     background-color: #fff;
@@ -57,7 +57,7 @@ li
 {
     display: inline-block;
     color: #ff910b;
-    padding-left: 1em;
+    padding-left: 0.5em;
     vertical-align: bottom;
     margin-top: -1em;
     cursor: cell;

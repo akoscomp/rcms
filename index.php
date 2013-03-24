@@ -9,7 +9,13 @@
     </head>
     <body>
 	<?php
-	  include_once "scan.php";
+
+	include_once "scan.php";
+
+	if (isset($_SERVER['PHP_AUTH_USER'])) {
+	  print('user: '.$_SERVER['PHP_AUTH_USER']);
+	}
+
 	  $db = new SQLite3('data/data.db');
 	  $roomlist = $db->query('SELECT room FROM roomlist');
 	  $db = null;
@@ -17,13 +23,13 @@
 	<ul>
 	<?php
 	    while ($row = $roomlist->fetchArray()) {
-		   print '<li id="'.$row["room"].'" onclick="getServerText(this)">'.$row["room"].'</li>';
+		   print '<li id="'.$row["room"].'" data-room="'.$row["room"].'" onclick="getServerText(this)">'.$row["room"].'</li>';
 	    }
 	?>
 	</ul>
 
 	<label id="ip" class="hiddenlabel"><?php echo $_SERVER['REMOTE_ADDR']; ?></label>
-        <div id="tableReturn">Please select room...</div>
+        <div id="tableReturn">Please select a group...</div>
         <div id="messageBox"></div>
 
     </body>
