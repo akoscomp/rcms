@@ -20,10 +20,9 @@
     foreach ($out as &$line) {
       $arr = preg_split("/[\t,]+/", $line);
       $results = $db->query('SELECT mac FROM hostlist WHERE mac="'.$arr[1].'"'); //return TRUE if mac exists
-      if (!$results) {
+      if ($results instanceof Sqlite3Result) {
           $results = $db->query('INSERT INTO hostlist (ip, hostname, room, state, os, mac)'.
                         'VALUES ("'.$arr[0].'", "'.gethostbyaddr($arr[0]).'", "other", "on", "lin", "'.$arr[1].'")');
-print('VALUES ("'.$arr[0].'", "'.gethostbyaddr($arr[0]).'", "other", "on", "lin", "'.$arr[1].'")\n');
         }
       else
         {
