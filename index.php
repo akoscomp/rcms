@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<!--<link rel="shortcut icon" href="favicon.ico">-->
 	<script language="JavaScript" src="functions.js" type="text/javascript"></script>
+	<script language="JavaScript" src="`jquery-1.9.1.min.js" type="text/javascript"></script>
     </head>
     <body>
 	<?php

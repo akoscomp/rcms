@@ -54,6 +54,8 @@ xmlhttp.send();
 
 function startall(oObject)
 {
+document.getElementById('spin').style.visibility = 'visible';
+document.getElementById("messageBox").innerHTML = 'Please wait...';
 if (window.XMLHttpRequest)
   {// code for IE7+, Firefox, Chrome, Opera, Safari
   xmlhttp=new XMLHttpRequest();
@@ -66,12 +68,13 @@ xmlhttp.onreadystatechange=function()
   {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
+    document.getElementById('spin').style.visibility = 'hidden';
     document.getElementById("messageBox").innerHTML=xmlhttp.responseText;
     }
   }
 
 var ip = document.getElementById("ip").innerHTML;
-var room = document.getElementById('stopall').getAttribute('data-room');
+var room = document.getElementById('startall').getAttribute('data-room');
 xmlhttp.open("GET","startall.php?room="+room+"&ip="+ip,true);
 xmlhttp.send();
 }
@@ -103,6 +106,8 @@ xmlhttp.send();
 
 function stopall(oObject)
 {
+document.getElementById('spin').style.visibility = 'visible';
+document.getElementById("messageBox").innerHTML = 'Please wait...';
 if (window.XMLHttpRequest)
   {// code for IE7+, Firefox, Chrome, Opera, Safari
   xmlhttp=new XMLHttpRequest();
@@ -134,6 +139,7 @@ function stopold() {
 
 function refresh(oObject) {
 document.getElementById('spin').style.visibility = 'visible';
+document.getElementById("messageBox").innerHTML = 'Please wait...';
 if (window.XMLHttpRequest)
   {// code for IE7+, Firefox, Chrome, Opera, Safari
   xmlhttp=new XMLHttpRequest();
