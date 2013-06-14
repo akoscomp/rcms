@@ -9,7 +9,7 @@ require('routeros_api.class.php');
 
 $API = new routeros_api();
 
-if ($API->connect('10.0.0.254', 'teszt', 'eysoknbp')) {
+if ($API->connect('10.0.0.254', 'teszt', 'Bfu6NL9Fyi')) {
 
 if ($room == 'info1') {
     $API->write("/ip/firewall/filter/print", false);
