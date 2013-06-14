@@ -1,3 +1,18 @@
+<?php
+include "functions.php";
+
+$room = $_GET["room"];
+?>
+<?php
+if ($room == "info1" || $room == "info3") {
+  if ( netstatus($room) ) {
+    print '<input id="netstartstopbt" type="button" class="netstartstopbt" data-stat="stop" data-room="'.$room.'" onclick="netstartstop(this)" value="Stop internet" />';
+  }
+  else {
+    print '<input id="netstartstopbt" type="button" class="netstartstopbt" data-stat="start" data-room="'.$room.'" onclick="netstartstop(this)" value="Start internet" />';
+  }
+}
+?>
 <table id="complist" cellspacing="1">
     <thead>
 	<tr>
@@ -6,7 +21,6 @@
     </thead>
     <tbody>
 <?php
-	$room = $_GET["room"];
 	//$room = "info3";
 	$db = new SQLite3('data/data.db');
         $results = $db->query('SELECT * FROM hostlist');

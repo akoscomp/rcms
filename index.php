@@ -11,7 +11,7 @@
     <body>
 	<?php
 
-	include_once "scan.php";
+//	include_once "scan.php";
 
 	if (isset($_SERVER['PHP_AUTH_USER'])) {
 	  print('user: '.$_SERVER['PHP_AUTH_USER']);

@@ -1274,3 +1274,806 @@ akos: Scan..., host found: 66.
 akos: Scan..., host found: 66.
 akos: Scan..., host found: 66.
 akos: Scan..., host found: 66.
+akos: Scan..., host found: 23.
+petra: Scan..., host found: 23.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie512 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie513 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie513 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie514 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie516 out: .
+zoli: Scan..., host found: 24.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie512 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie513 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie516 out: .
+zoli: 10.0.0.100: sudo wakeonlan 1c:6f:65:e7:5f:1a out: Sending magic packet to 255.255.255.255:9 with 1c:6f:65:e7:5f:1a.
+zoli: 10.0.0.100: sudo wakeonlan 1c:6f:65:e7:5f:1a out: Sending magic packet to 255.255.255.255:9 with 1c:6f:65:e7:5f:1a.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie516 out: .
+akos: Scan..., host found: 66.
+zoli: Scan..., host found: 48.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:77:74 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:77:74.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:0b:c9 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:0b:c9.
+zoli: Scan..., host found: 48.
+akos: Scan..., host found: 18.
+akos:  from: 188.24.17.209: Power ON all hosts in info3.
+akos: Scan..., host found: 29.
+akos: Scan..., host found: 29.
+akos: 188.24.17.209: sudo wakeonlan 00:1d:7d:51:03:f7 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:03:f7.
+akos: 188.24.17.209: sudo wakeonlan 00:1d:7d:51:0b:c9 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:0b:c9.
+akos: 188.24.17.209: sudo wakeonlan 00:1d:7d:51:09:8b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:09:8b.
+akos: 188.24.17.209: sudo wakeonlan 00:1c:25:d2:44:01 out: Sending magic packet to 255.255.255.255:9 with 00:1c:25:d2:44:01.
+akos: 188.24.17.209: sudo wakeonlan 00:1d:7d:51:7c:5b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7c:5b.
+akos: 188.24.17.209: sudo wakeonlan 00:1d:7d:51:7b:ef out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7b:ef.
+akos: Scan..., host found: 29.
+akos: akos, from: 188.24.17.209: Shutdown all hosts in info3.
+akos: Scan..., host found: 14.
+akos: 188.24.17.209: sudo /root/shutdown.sh salprof1 out: .
+akos: Scan..., host found: 14.
+zoli: Scan..., host found: 29.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:50:fc:f0 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:50:fc:f0.
+akos: Scan..., host found: 29.
+akos: Scan..., host found: 33.
+akos: Scan..., host found: 46.
+akos: Scan..., host found: 19.
+akos: akos, from: 83.103.152.83: Shutdown all hosts in info3.
+akos: Scan..., host found: 10.
+akos: Scan..., host found: 22.
+akos: akos, from: 83.103.152.83: Shutdown all hosts in info3.
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.100: sudo wakeonlan 00:21:97:1b:28:bd out: Sending magic packet to 255.255.255.255:9 with 00:21:97:1b:28:bd.
+zoli: 10.0.0.100: sudo wakeonlan 00:21:97:1b:28:bd out: Sending magic packet to 255.255.255.255:9 with 00:21:97:1b:28:bd.
+zoli: 10.0.0.100: sudo wakeonlan 00:21:97:1b:28:bd out: Sending magic packet to 255.255.255.255:9 with 00:21:97:1b:28:bd.
+zoli: Scan..., host found: 19.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie516 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie530 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie523 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie523 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie530 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie523 out: .
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie527 out: .
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie515 out: .
+zoli: Scan..., host found: 17.
+zoli: zoli, from: 10.0.0.100: Shutdown all hosts in info3.
+akos: Scan..., host found: 15.
+akos: Scan..., host found: 15.
+akos: Scan..., host found: 15.
+akos: Scan..., host found: 16.
+zoli: Scan..., host found: 17.
+zoli: 10.0.0.59: sudo wakeonlan 00:1d:7d:51:7b:df out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7b:df.
+zoli: 10.0.0.59: sudo wakeonlan 00:1d:7d:51:0d:13 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:0d:13.
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.59: sudo /root/shutdown.sh statie514 out: .
+zoli: Scan..., host found: 17.
+zoli: 10.0.0.59: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+zoli: Scan..., host found: 48.
+zoli: 10.0.0.100: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+zoli: Scan..., host found: 48.
+zoli: 10.0.0.100: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+zoli: Scan..., host found: 47.
+zoli: Scan..., host found: 47.
+zoli: Scan..., host found: 47.
+zoli: 10.0.0.100: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+zoli: 10.0.0.100: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+zoli: 10.0.0.100: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+zoli: Scan..., host found: 42.
+zoli: Scan..., host found: 29.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 49.
+zoli: Scan..., host found: 51.
+zoli: Scan..., host found: 51.
+zoli: Scan..., host found: 51.
+zoli: 10.0.0.100: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+zoli: Scan..., host found: 53.
+zoli: Scan..., host found: 53.
+zoli: Scan..., host found: 53.
+zoli: Scan..., host found: 55.
+zoli: Scan..., host found: 55.
+zoli: Scan..., host found: 55.
+zoli: Scan..., host found: 55.
+zoli: Scan..., host found: 54.
+zoli: Scan..., host found: 54.
+zoli: Scan..., host found: 54.
+zoli: Scan..., host found: 19.
+zoli: Scan..., host found: 17.
+zoli: Scan..., host found: 17.
+zoli: Scan..., host found: 17.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie526 out: .
+zoli: Scan..., host found: 18.
+zoli: Scan..., host found: 18.
+zoli: Scan..., host found: 18.
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie526 out: .
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.100: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+zoli: zoli, from: 10.0.0.100: Shutdown all hosts in info3.
+akos: Scan..., host found: 53.
+zoli: Scan..., host found: 49.
+zoli: Scan..., host found: 48.
+zoli: Scan..., host found: 48.
+zoli: Scan..., host found: 48.
+zoli: Scan..., host found: 48.
+zoli: Scan..., host found: 47.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 45.
+zoli: Scan..., host found: 45.
+zoli: Scan..., host found: 19.
+akos: Scan..., host found: 18.
+zoli:  from: 10.0.0.100: Power ON all hosts in info3.
+zoli: Scan..., host found: 18.
+zoli: Scan..., host found: 42.
+akos: Scan..., host found: 43.
+akos: Scan..., host found: 43.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:09:8b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:09:8b.
+akos: 10.0.0.250: sudo wakeonlan 00:1c:25:d2:44:01 out: Sending magic packet to 255.255.255.255:9 with 00:1c:25:d2:44:01.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:09:93 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:09:93.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:79:08 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:79:08.
+akos: Scan..., host found: 43.
+zoli: Scan..., host found: 43.
+akos: Scan..., host found: 44.
+akos: Scan..., host found: 47.
+zoli: Scan..., host found: 47.
+akos: Scan..., host found: 39.
+akos: Scan..., host found: 39.
+akos: 10.0.0.250: sudo wakeonlan 1c:6f:65:e7:58:82 out: Sending magic packet to 255.255.255.255:9 with 1c:6f:65:e7:58:82.
+akos: Scan..., host found: 40.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:50:1a:17 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:50:1a:17.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:77:74 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:77:74.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:76:c0 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:76:c0.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:b9:45:4b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:b9:45:4b.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:75:34 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:75:34.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:50:b9:5c out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:50:b9:5c.
+akos: 10.0.0.250: sudo wakeonlan 00:21:97:1b:28:bd out: Sending magic packet to 255.255.255.255:9 with 00:21:97:1b:28:bd.
+akos: Scan..., host found: 47.
+akos: Scan..., host found: 45.
+akos: 10.0.0.250: sudo wakeonlan 00:21:97:1b:28:bd out: Sending magic packet to 255.255.255.255:9 with 00:21:97:1b:28:bd.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:7e:70 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7e:70.
+akos: Scan..., host found: 47.
+akos: Scan..., host found: 45.
+akos: Scan..., host found: 36.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:09:8b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:09:8b.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:50:b9:5c out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:50:b9:5c.
+akos: 10.0.0.250: sudo wakeonlan 00:21:97:1b:28:bd out: Sending magic packet to 255.255.255.255:9 with 00:21:97:1b:28:bd.
+akos: Scan..., host found: 39.
+akos: Scan..., host found: 39.
+akos: akos, from: 188.24.14.133: Shutdown all hosts in info3.
+akos: Scan..., host found: 52.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:09:8b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:09:8b.
+akos:  from: 10.0.0.250: Power ON all hosts in info3.
+akos: Scan..., host found: 60.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:08:f4 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:08:f4.
+akos: Scan..., host found: 54.
+akos: Scan..., host found: 50.
+akos: Scan..., host found: 55.
+akos: Scan..., host found: 16.
+zoli: Scan..., host found: 22.
+zoli: Scan..., host found: 22.
+zoli: Scan..., host found: 22.
+zoli: Scan..., host found: 22.
+zoli: Scan..., host found: 22.
+zoli: Scan..., host found: 22.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie525 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie525 out: .
+zoli: Scan..., host found: 21.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie515 out: .
+zoli: Scan..., host found: 21.
+zoli: Scan..., host found: 20.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie515 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie511 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie510 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie509 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie508 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie507 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie511 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie510 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie509 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie508 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie507 out: .
+zoli: Scan..., host found: 16.
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie507 out: .
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie507 out: .
+zoli: Scan..., host found: 16.
+petra: Scan..., host found: 10.
+petra: Scan..., host found: 10.
+akos: Scan..., host found: 23.
+zoli: Scan..., host found: 15.
+zoli: Scan..., host found: 15.
+zoli: Scan..., host found: 15.
+zoli: Scan..., host found: 43.
+zoli: Scan..., host found: 43.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 42.
+zoli: Scan..., host found: 42.
+zoli: Scan..., host found: 42.
+zoli: Scan..., host found: 42.
+zoli: Scan..., host found: 42.
+zoli: Scan..., host found: 41.
+zoli: Scan..., host found: 47.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:50:b9:5c out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:50:b9:5c.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:50:b9:5c out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:50:b9:5c.
+zoli: Scan..., host found: 47.
+zoli: Scan..., host found: 47.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:50:b9:5c out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:50:b9:5c.
+zoli: Scan..., host found: 47.
+zoli: Scan..., host found: 47.
+zoli: Scan..., host found: 41.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:50:b9:5c out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:50:b9:5c.
+zoli: Scan..., host found: 43.
+zoli: Scan..., host found: 43.
+zoli: Scan..., host found: 43.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 30.
+zoli: Scan..., host found: 43.
+zoli: Scan..., host found: 49.
+zoli: Scan..., host found: 49.
+zoli: Scan..., host found: 56.
+zoli: Scan..., host found: 54.
+zoli: Scan..., host found: 45.
+zoli: Scan..., host found: 22.
+zoli:  from: 10.0.0.100: Power ON all hosts in info3.
+zoli: Scan..., host found: 22.
+zoli: Scan..., host found: 40.
+zoli: Scan..., host found: 40.
+zoli: Scan..., host found: 39.
+zoli: Scan..., host found: 40.
+zoli: Scan..., host found: 40.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7c:5b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7c:5b.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7c:5b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7c:5b.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7b:ef out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7b:ef.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:50:b9:5c out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:50:b9:5c.
+zoli: Scan..., host found: 40.
+zoli: zoli, from: 10.0.0.100: Shutdown all hosts in info3.
+zoli: Scan..., host found: 16.
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie507 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie527 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie528 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie530 out: .
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie507 out: .
+zoli: Scan..., host found: 16.
+zoli: zoli, from: 10.0.0.100: Shutdown all hosts in info3.
+zoli: Scan..., host found: 16.
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie507 out: .
+zoli: Scan..., host found: 16.
+zoli: zoli, from: 10.0.0.100: Shutdown all hosts in info3.
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie507 out: .
+zoli: Scan..., host found: 16.
+zoli: Scan..., host found: 51.
+zoli: Scan..., host found: 51.
+zoli: Scan..., host found: 52.
+zoli: Scan..., host found: 52.
+zoli: Scan..., host found: 38.
+zoli: Scan..., host found: 32.
+zoli: Scan..., host found: 32.
+zoli: Scan..., host found: 32.
+zoli: Scan..., host found: 30.
+akos: Scan..., host found: 23.
+akos: 213.164.252.45: sudo wakeonlan 00:1d:7d:b9:45:4b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:b9:45:4b.
+akos: 213.164.252.45: sudo wakeonlan 00:1d:7d:51:7e:70 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7e:70.
+akos: 213.164.252.45: sudo wakeonlan 00:1d:7d:51:76:c0 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:76:c0.
+akos: Scan..., host found: 26.
+akos: Scan..., host found: 26.
+akos: 10.0.0.250: sudo wakeonlan 00:1d:7d:51:09:8b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:09:8b.
+akos: 10.0.0.250: sudo wakeonlan 1c:6f:65:e7:58:82 out: Sending magic packet to 255.255.255.255:9 with 1c:6f:65:e7:58:82.
+akos: Scan..., host found: 27.
+akos: akos, from: 10.0.0.250: Shutdown all hosts in info3.
+akos: Scan..., host found: 9.
+akos: 10.0.0.250: sudo /root/shutdown.sh statie401 out: .
+zoli: Scan..., host found: 62.
+zoli: Scan..., host found: 43.
+zoli: Scan..., host found: 53.
+zoli: Scan..., host found: 53.
+zoli: Scan..., host found: 44.
+zoli: 10.0.0.100: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+akos: Scan..., host found: 25.
+akos: Scan..., host found: 25.
+akos: Scan..., host found: 25.
+akos: Scan..., host found: 25.
+akos: Scan..., host found: 25.
+akos: Scan..., host found: 25.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 24.
+akos: Scan..., host found: 23.
+akos: Stop net..., host found: info1.
+akos: Stop net..., host found: info1.
+akos: Stop internet: info1.
+akos: Stop internet: info1.
+akos: Stop internet: info3.
+akos: Stop internet: info3.
+akos: Stop internet: info1.
+akos: Stop internet: info1.
+akos: Stop internet: info3.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 23.
+akos: Scan..., host found: 23.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 23.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: akos, from: 188.24.14.133: Shutdown all hosts in info3.
+akos: Scan..., host found: 12.
+akos: Scan..., host found: 12.
+akos: 188.24.14.133: sudo /root/shutdown.sh statie507 out: .
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Scan..., host found: 11.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info1.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info3.
+akos: Start/Stop internet: info1.
+zoli: Scan..., host found: 49.
+zoli: Scan..., host found: 51.
+zoli: Scan..., host found: 55.
+zoli: Scan..., host found: 17.
+zoli: Scan..., host found: 17.
+zoli: Start/Stop internet: info3.
+zoli: Start/Stop internet: info3.
+zoli: 10.0.0.100: sudo wakeonlan e6:af:0a:20:56:08 out: Sending magic packet to 255.255.255.255:9 with e6:af:0a:20:56:08.
+zoli: Scan..., host found: 59.
+zoli: Scan..., host found: 59.
+zoli: Scan..., host found: 59.
+zoli: Scan..., host found: 59.
+zoli: Scan..., host found: 59.
+zoli: Scan..., host found: 59.
+zoli: Scan..., host found: 59.
+zoli: Scan..., host found: 58.
+zoli: Scan..., host found: 58.
+zoli: Scan..., host found: 58.
+zoli: Scan..., host found: 58.
+zoli: Scan..., host found: 58.
+zoli: Scan..., host found: 54.
+zoli: Scan..., host found: 56.
+zoli: Scan..., host found: 57.
+zoli: Scan..., host found: 57.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 30.
+zoli: Scan..., host found: 30.
+zoli: Scan..., host found: 30.
+zoli: Scan..., host found: 30.
+zoli: Scan..., host found: 30.
+zoli: Scan..., host found: 29.
+zoli: Scan..., host found: 26.
+zoli: Scan..., host found: 36.
+zoli: Scan..., host found: 36.
+zoli: Scan..., host found: 36.
+zoli: Scan..., host found: 36.
+zoli: Scan..., host found: 36.
+zoli: Scan..., host found: 36.
+zoli: Scan..., host found: 36.
+zoli: Scan..., host found: 37.
+zoli: Scan..., host found: 36.
+zoli: Scan..., host found: 18.
+zoli: Scan..., host found: 15.
+zoli: Scan..., host found: 47.
+zoli: Scan..., host found: 47.
+zoli: Scan..., host found: 21.
+zoli: Scan..., host found: 21.
+zoli: Scan..., host found: 21.
+zoli: Scan..., host found: 21.
+zoli: Scan..., host found: 20.
+zoli: Scan..., host found: 20.
+zoli: Scan..., host found: 20.
+zoli: Scan..., host found: 20.
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie513 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie526 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie530 out: .
+zoli: Scan..., host found: 15.
+zoli: Scan..., host found: 15.
+zoli: Scan..., host found: 15.
+zoli: Scan..., host found: 15.
+zoli: Scan..., host found: 40.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7d:85 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7d:85.
+zoli: Scan..., host found: 39.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie506 out: .
+zoli: Scan..., host found: 39.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 37.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 37.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie504 out: .
+zoli: Scan..., host found: 37.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 36.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 29.
+zoli: Scan..., host found: 29.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 29.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 28.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7d:85 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7d:85.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7d:85 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7d:85.
+zoli: Scan..., host found: 28.
+zoli: Scan..., host found: 28.
+zoli: Scan..., host found: 29.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: zoli, from: 10.0.0.100: Shutdown all hosts in info3.
+zoli: Scan..., host found: 22.
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7d:85 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7d:85.
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 16.
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 37.
+zoli: Scan..., host found: 37.
+zoli: Scan..., host found: 37.
+zoli: Scan..., host found: 37.
+zoli: Scan..., host found: 48.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 48.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: Scan..., host found: 47.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 48.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 37.
+zoli: Scan..., host found: 21.
+zoli: Scan..., host found: 20.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie516 out: .
+zoli: Scan..., host found: 19.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:08:f4 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:08:f4.
+zoli: Scan..., host found: 19.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie516 out: .
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:08:f4 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:08:f4.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7d:85 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7d:85.
+zoli: Scan..., host found: 18.
+zoli: Scan..., host found: 18.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:08:f4 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:08:f4.
+zoli: Scan..., host found: 19.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:08:f4 out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:08:f4.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie516 out: .
+zoli: Scan..., host found: 16.
+zoli: Scan..., host found: 16.
+zoli: Scan..., host found: 16.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie529 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie518 out: .
+zoli: zoli, from: 10.0.0.100: Shutdown all hosts in info3.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie505 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie501 out: .
+zoli: Scan..., host found: 15.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie518 out: .
+zoli: Scan..., host found: 15.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie518 out: .
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 41.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 34.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie518 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie518 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie518 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie518 out: .
+zoli: Scan..., host found: 33.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7c:5b out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7c:5b.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 33.
+zoli: Scan..., host found: 33.
+zoli: Scan..., host found: 34.
+zoli: Start/Stop internet: info3.
+zoli: Start/Stop internet: info3.
+zoli: Start/Stop internet: info3.
+zoli: Start/Stop internet: info3.
+zoli: Scan..., host found: 34.
+zoli: zoli, from: 10.0.0.100: Shutdown all hosts in info3.
+zoli: Scan..., host found: 13.
+zoli: Scan..., host found: 13.
+zoli: Scan..., host found: 26.
+zoli: Scan..., host found: 25.
+zoli: Scan..., host found: 42.
+zoli: Scan..., host found: 53.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie520 out: .
+zoli: Scan..., host found: 43.
+zoli: 10.0.0.100: sudo wakeonlan 00:1d:7d:51:7b:ef out: Sending magic packet to 255.255.255.255:9 with 00:1d:7d:51:7b:ef.
+zoli: Scan..., host found: 20.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 39.
+zoli: Scan..., host found: 39.
+zoli: Scan..., host found: 39.
+zoli: Scan..., host found: 39.
+zoli: Scan..., host found: 64.
+zoli: Scan..., host found: 56.
+zoli: Scan..., host found: 56.
+zoli: Scan..., host found: 56.
+zoli: Scan..., host found: 44.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 49.
+zoli: Scan..., host found: 48.
+zoli: Scan..., host found: 49.
+zoli: 10.0.0.100: sudo /root/shutdown.sh 10.0.0.85 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh 10.0.0.85 out: .
+zoli: Scan..., host found: 49.
+zoli: Scan..., host found: 49.
+zoli: Scan..., host found: 49.
+zoli: Scan..., host found: 18.
+zoli: Scan..., host found: 18.
+zoli: Scan..., host found: 20.
+zoli: Scan..., host found: 21.
+zoli: Scan..., host found: 21.
+zoli: Scan..., host found: 19.
+zoli: Scan..., host found: 22.
+zoli: Scan..., host found: 13.
+zoli: Scan..., host found: 13.
+zoli: Scan..., host found: 13.
+zoli: Scan..., host found: 13.
+zoli: Scan..., host found: 21.
+zoli: Scan..., host found: 44.
+zoli: Scan..., host found: 45.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 40.
+zoli: Scan..., host found: 44.
+zoli:  from: 10.0.0.100: Power ON all hosts in info3.
+zoli: Scan..., host found: 24.
+zoli:  from: 10.0.0.100: Power ON all hosts in info3.
+zoli: Scan..., host found: 24.
+zoli: Scan..., host found: 24.
+zoli:  from: 10.0.0.100: Power ON all hosts in info3.
+zoli: Scan..., host found: 23.
+zoli: Scan..., host found: 23.
+zoli: Scan..., host found: 23.
+zoli: Scan..., host found: 23.
+zoli: Scan..., host found: 23.
+zoli:  from: 10.0.0.100: Power ON all hosts in info3.
+zoli: Scan..., host found: 23.
+zoli: Scan..., host found: 48.
+zoli: Scan..., host found: 48.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 46.
+zoli: Start/Stop internet: info3.
+zoli: Start/Stop internet: info1.
+zoli: Scan..., host found: 46.
+zoli: Scan..., host found: 45.
+zoli: Scan..., host found: 34.
+zoli: Scan..., host found: 33.
+zoli: zoli, from: 10.0.0.100: Shutdown all hosts in info3.
+zoli: Scan..., host found: 23.
+zoli: Scan..., host found: 23.
+zoli: Scan..., host found: 23.
+zoli: 10.0.0.100: sudo /root/shutdown.sh contabilitate2 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh contabilitate1 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh contabilitate1 out: .
+zoli: Scan..., host found: 23.
+zoli: 10.0.0.100: sudo /root/shutdown.sh contabilitate1 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh contabilitate1 out: .
+zoli: Scan..., host found: 23.
+zoli: 10.0.0.100: sudo /root/shutdown.sh contabilitate1 out: .
+zoli: 10.0.0.100: sudo /root/shutdown.sh contabilitate1 out: .
+zoli: Scan..., host found: 22.
+zoli: Start/Stop internet: info1.
+zoli: Scan..., host found: 13.
+zoli: Scan..., host found: 13.
+zoli: Scan..., host found: 13.
+zoli: Scan..., host found: 11.
+zoli: Scan..., host found: 11.
+zoli: 10.0.0.100: sudo /root/shutdown.sh statie516 out: .
+zoli: Start/Stop internet: info3.
+zoli:  from: 10.0.0.100: Power ON all hosts in info3.
+zoli: Scan..., host found: 22.
+zoli: Scan..., host found: 35.
+zoli: Scan..., host found: 14.
+zoli: Scan..., host found: 14.
+zoli: Scan..., host found: 14.
+zoli: Scan..., host found: 23.
+zoli: Scan..., host found: 22.

@@ -138,6 +138,13 @@ tfoot
 	background-repeat: no-repeat;
 }
 
+.stoped {
+	background: red;
+}
+
+.started {
+	background: green;
+}
 
 #refresh-button {
 	width: 80px;
@@ -170,11 +177,44 @@ select {
 	font: 12px sans-serif;
 }
 
-.stoped {
-	background: red;
+input.netstartstopbt
+{
+   font-size:23px;
+   font-family: Arial, sans-serif;
+   color: #181617;
+}
+.netstartstopbt[data-stat="start"] {
+        border: 2px #333 solid;
+        padding:13px;
+        background-color:red;
+        border-radius:60px;
+        box-shadow:0px 0px 15px green;
+	margin-bottom: 20px;
+}
+.netstartstopbt[data-stat="stop"] {
+        border: 2px #333 solid;
+        padding:13px;
+        background-color:green;
+        border-radius:10px;
+        box-shadow:0px 0px 15px red;
+	margin-bottom: 20px;
 }
 
-.started {
-	background: green;
+input[type=button] {
+        transition:all 0.3s ease-in-out;
+}
+.netstartstopbt[data-stat="start"]:hover {
+        background-color: green;
+        padding:13px;
+        border-radius:10px;
+        box-shadow:0px 0px 15px green;
+	color: white;
+}
+.netstartstopbt[data-stat="stop"]:hover {
+        background-color: red;
+        padding:13px;
+        border-radius:60px;
+        box-shadow:0px 0px 15px red;
+	color: white;
 }
 

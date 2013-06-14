@@ -161,3 +161,38 @@ var room = document.getElementById('refreshbt').getAttribute('data-room');
 xmlhttp.open("GET","scan.php?room="+room,true);
 xmlhttp.send();
 }
+
+function netstartstop(oObject)
+{
+var value = document.getElementById(oObject.id).value;
+if (value == "Stop internet")
+{
+document.getElementById('netstartstopbt').setAttribute("data-stat", "start");
+document.getElementById('netstartstopbt').value = "Start internet";
+}
+else
+{
+document.getElementById('netstartstopbt').setAttribute("data-stat", "stop");
+document.getElementById('netstartstopbt').value = "Stop internet";
+}
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("messageBox").innerHTML=xmlhttp.responseText;
+    }
+  }
+
+var room = document.getElementById(oObject.id).getAttribute('data-room');
+xmlhttp.open("GET","netstartstop.php?room="+room,true);
+xmlhttp.send();
+}
