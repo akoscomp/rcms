@@ -1,0 +1,220 @@
+/* 
+    Document   : style
+    Created on : 2013.03.09., 11:40:33
+    Author     : nagy.akos
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+	font-family: Arial, sans-serif;/*ha nicn arial, hasznalja a kovetketzot, stb*/
+	font-size: 0.8em;/*minden kissebb lesz, 80%*/
+        width:800px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+/*
+#tableReturn {
+    border: 1px solid gray;
+    margin: 0px;
+    padding: 8px;
+    float: center;
+    width: 400px;
+}
+*/
+#messageBox {
+    border: none;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    background-color: Lightgreen;
+}
+
+.hiddenlabel {
+    visibility:hidden
+}
+
+ul
+{
+    height: 0.9em;
+    font-size: 2.5em;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    background-color: #fff;
+    overflow: hidden;
+    border-bottom: 1px solid red;
+}
+
+li
+{
+    display: inline-block;
+    color: #ff910b;
+    padding-left: 0.5em;
+    vertical-align: bottom;
+    margin-top: -1em;
+    cursor: cell;
+}
+
+    li.selected
+    {
+        color: #f44;
+        margin-bottom: 0.2em;
+    }
+
+    li:hover
+    {
+        color: #f00;
+        margin-bottom: 0.2em;
+    }
+
+
+table
+{
+	padding: 0;
+	margin: 0 0 3px 0;
+	border-spacing: 1px;
+	border-collapse: separate;
+	border: 1px solid #e0e0e0;
+	background: #fff;
+	width: 100%; 
+}
+
+thead
+{
+	background: #e7e7e7;
+	cursor: pointer;
+}
+
+thead td
+{
+    	font: 11px sans-serif;
+	font-weight: bold;
+}
+
+td
+{
+	padding: 2px;
+	margin: 0px;
+	font: 12px sans-serif;
+}
+
+tr:nth-child(even)
+{
+	background: #fff;
+	cursor: pointer;
+}
+
+tr:nth-child(odd)
+{
+	background: #f7f7f7;
+	cursor: pointer;
+}
+
+tbody tr:hover
+{
+    background: lightpink;
+}
+
+tfoot
+{
+    	background: #f0f0f0;
+}
+.tomato-grid .sortasc {
+	background-image: url(data/up.gif);
+	background-position: 97% 60%;
+	background-repeat: no-repeat;
+}
+.tomato-grid .sortdes {
+	background-image: url(data/dn.gif);
+	background-position: 97% 80%;
+	background-repeat: no-repeat;
+}
+
+.stoped {
+	background: red;
+}
+
+.started {
+	background: green;
+}
+
+#refresh-button {
+	width: 80px;
+}
+#refresh-time {
+	width: 120px;
+}
+#refresh-spinner {
+	visibility: hidden;
+	vertical-align: middle;
+}
+
+input[type='button'] {
+	color: #000;
+	background: #f7f7f7;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+input[type='button'][disabled] {
+	color: #aaa;
+}
+input[type='button']:hover {
+	background: #BF6060;
+	color: #fff;
+}
+input,
+select {
+	font: 12px sans-serif;
+}
+
+input.netstartstopbt
+{
+   font-size:23px;
+   font-family: Arial, sans-serif;
+   color: #181617;
+}
+netstartstopbt[data-stat="start"] {
+        border: 2px #333 solid;
+        padding:13px;
+        background-color:red;
+        border-radius:60px;
+        box-shadow:0px 0px 12px green;
+color: darkgreen;
+}
+.netstartstopbt[data-stat="stop"] {
+        border: 2px #333 solid;
+        padding:13px;
+        background-color:green;
+        border-radius:10px;
+        box-shadow:0px 0px 22px red;
+	color: red;
+}
+
+input[type=button] {
+        transition:all 0.3s ease-in-out;
+}
+#button1:hover {
+        background-color: green;
+        padding:13px;
+        border-radius:10px;
+        box-shadow:0px 0px 22px green;
+	color: white;
+}
+#button2:hover {
+        background-color: red;
+        padding:13px;
+        border-radius:60px;
+        box-shadow:0px 0px 12px red;
+	color: white;
+}
+
