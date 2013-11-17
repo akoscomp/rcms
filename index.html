@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>rcms2</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href = "css/bootstrap.min.css" rel = "stylesheet">
+            <link href = "css/styles.css" rel = "stylesheet">
+    </head>
+    <body>
+        
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                
+                <a href="#" class="navbar-brand">rcms</a>
+                
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    
+                    <ul class = "nav navbar-nav navbar-right">
+                        
+                        <li class="active"><a href="#">Home</a></li>
+                        
+                        <li class = "dropdown">
+                            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Rooms <b class = "caret"></b></a>
+                            <ul class = "dropdown-menu">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Rest</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="#contact" data-toggle="modal">Contact Me</a></li>
+
+                    </ul>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1>Title</h1>
+                <p>Text</p>
+                <a class="btn btn-default btn-info">Btn1</a>
+                <a class="btn btn-default btn-danger">Btn2</a>
+            </div>
+        
+        </div>
+        
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <p class="navbar-text pull-left">rcms footer</p>
+                <a href="#" class="navbar-btn btn-danger btn pull-right ">Button</a>
+            
+            </div>
+        </div>
+        
+        <div class="modal fade" id="contact" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Contact Tech Site</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Text text text text text text text text text text text text text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-default" data-dismiss="modal">Send</a>
+                        <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
