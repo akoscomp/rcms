@@ -1,0 +1,93 @@
+body {
+ margin-bottom:   80px;
+}/* tables */
+
+
+.poweroff {
+	color: red;
+}
+
+.poweron {
+	color: green;
+}
+
+.centred {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+.trigger{
+    width: 50px;    
+}
+
+.mytooltip{
+    position: absolute;
+    display: none;
+    background-color: lightblue;     
+    min-width: 300px;    
+    left: 20px;
+/*    top: 40px; */
+    border-radius: 10px;
+    padding: 10px;
+    color: red;
+	text-align: left;
+}
+
+.trigger:hover + .mytooltip {
+    display: block;
+}
+
+.table {
+	text-align: center;
+}
+
+.glyphicon {
+/*    position: static;*/
+    position: relative;
+}
+
+.jumbotron {
+  max-width: 450px;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-color: #eeeeee;
+}
+
+.container .jumbotron {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+th {
+  text-align: center;
+}
+
+.boxLabel {
+    font-size: 18px;
+	color: black;
+	padding: 10px;
+	text-align: left;
+}
+
+.boxText {
+    font-size: 12px;
+	color: gray;
+	text-align: left;
+}
+
+.form-style {
+  max-width: 350px;
+  padding: 0px 29px 29px;
+  margin: 20px auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  list-style: none;
+}
+
