@@ -1,0 +1,28 @@
+*/7  *    *   *    *     /home/akos/rcms/server/scan.php >> /home/akos/rcms/public/rcms.log
+@reboot /home/akos/rcms/bell/stopall.py
+#0   8    *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#45  8    *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#50  8    *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#35  9    *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#40  9    *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#25  10   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#35  10   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#20  11   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#25  11   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#10  12   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#15  12   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#0   13   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#5   13   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#50  13   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#0   14   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#45  14   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#50  14   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#35  15   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#40  15   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#25  16   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#35  16   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#20  17   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#27  17   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#10  18   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log
+#15  18   *   *   1-5    /home/akos/rcms/bell/ringcron.py 12 >> /home/akos/rcms/bell/ringlici.log
+#0   19   *   *   1-5    /home/akos/rcms/bell/ringcron.py 8  >> /home/akos/rcms/bell/ringlici.log

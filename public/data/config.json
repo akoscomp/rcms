@@ -1,0 +1,35 @@
+{
+    "rooms": {
+        "info1": { "id":"info1", "name":"Info 1", "guestaccess":0, "poweron":1, "poweroff":1, "poweronall":1, "poweroffall":0, "internet":1},
+        "info2": { "id":"info2", "name":"Info 2", "guestaccess":0, "poweron":1, "poweroff":1, "poweronall":1, "poweroffall":0, "internet":1},
+        "info3": { "id":"info3", "name":"Info 3", "guestaccess":0, "poweron":1, "poweroff":1, "poweronall":1, "poweroffall":0, "internet":1},
+        "admin": { "id":"admin", "name":"Administratie", "guestaccess":0, "poweron":1, "poweroff":1, "poweronall":0, "poweroffall":0, "internet":0},
+        "network": { "id":"network", "name":"Network devices", "guestaccess":0, "poweron":1, "poweroff":0, "poweronall":0, "poweroffall":0, "internet":0},
+	"all": { "id":"all", "name":"All", "guestaccess":0, "poweron":0, "poweroff":0, "poweronall":0, "poweroffall":0, "internet":0}
+        },
+    "groups": {
+        "admin":["admin", "akos", "dani", "zoli"],
+        "bell":["admin", "akos", "dani", "zoli"],
+        "info1":["petra"],
+        "info2":["petra"],
+        "info3":["petra"],
+        "network":[],
+        "internet":["akos", "zoli", "petra"]
+    },
+    "mikrotik": {
+        "host":"10.0.0.254",
+        "user":"rcms",
+        "password":"hiadH2AD"
+    },
+    "domain": "liceu.pecica.ro",
+    "subbstitutedomain":1,
+    "debug":0,
+    "autentication":1,
+    "ldapauth":0,
+    "ldapServer":"ldap://10.0.0.250",
+    "ldapDn":"liceu",
+    "guestaccess":0,
+    "startstopall":1,
+    "contactform":0,
+    "internet":1
+}

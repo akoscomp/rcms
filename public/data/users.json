@@ -1,0 +1,32 @@
+{
+    "admin": {
+        "enable": 0,
+        "fullname": "Administrator",
+        "password": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+        "email": "admin@example.com"
+    },
+    "akos": {
+        "enable": 1,
+        "fullname": "Nagy \u00c1kos",
+        "password": "e4227b299b0b804fe74fc485753197776b9955f153628817332997748e7a66e2",
+        "email": "nagy.akos@codespring.ro"
+    },
+    "dani": {
+        "enable": 1,
+        "password": "969505bb9b5dc8be3fedbf44243a056ca5cc4d5558006dd30c84f4710438b55a",
+        "fullname": "Dani Toth",
+        "email": "dani.toth@liceupecica.ro"
+    },
+    "zoli": {
+        "enable": 1,
+        "password": "e1f7964820e9dc1fa40dd9dc4f1f176b75b60c4e2bf1012d69a0721e4fecc7fe",
+        "fullname": "Zoli Plastin",
+        "email": "zoli@liceupecica.ro"
+    },
+    "petra": {
+        "enable": 1,
+        "password": "2a1dfc5ecb64b8f534a148b2e7f3923f90e004debc391acb74ece1b3353d786b",
+        "fullname": "Petra",
+        "email": "petra@liceupecica.ro"
+    }
+}
