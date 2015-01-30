@@ -1,19 +1,67 @@
 <?php
 include_once("config.php");
-if(loggedIn()):
-	header('Location: index.php');
-endif;
-if(isset($_POST["submit"])):
-  if(!($row = checkPass($_POST["login"], $_POST["password"]))):
-    echo "<p>Incorrect login/password, try again</p>";
-    exit;
-  endif;
-  cleanMemberSession($_POST["login"], $_POST["password"]);
-  header("Location: members.php");
-endif;
+session_start();
+
+$username = null;
+$password = null;
+
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    if(!empty($_POST["username"]) && !empty($_POST["password"])) {
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+        if(isset($users[$username]) && (hash('sha256', $password)==$users[$username]['password']) && ($users[$username]['enable'])) {
+            $_SESSION["authenticated"] = 'true';
+            $_SESSION["username"] = $username;
+            header('Location: index.php');
+        }
+        else {
+            if ($config['ldapauth']){
+                echo "ldap";
+                $adServer = $config['ldapServer'];
+                $ldap = ldap_connect($adServer);
+                $ldaprdn = $config['ldapDn'] . "\\" . $username;
+                ldap_set_option($ldap, LDAP_OPT_PROTOCOL_VERSION, 3);
+                ldap_set_option($ldap, LDAP_OPT_REFERRALS, 0);
+                $bind = @ldap_bind($ldap, $ldaprdn, $password);
+
+                if ($bind){
+                    //establish your session and redirect
+                    session_start();
+                    $_SESSION["authenticated"] = 'true';
+                    //$_SESSION["username"] = 'guest';
+                    $_SESSION["username"] = $username;
+                    $_SESSION["ldapusername"] = $username;
+                    header('Location: index.php');
+                    exit;
+                }
+                else {
+                    sleep(3);
+                    header('Location: login.php');
+                }
+            }
+            else {
+                sleep(3);
+                header('Location: login.php');
+            }
+        }
+    } else {
+        header('Location: login.php');
+    }
+} else {
+    
+    if (!$config['autentication'] && !$_SESSION["authenticated"]){
+    $_SESSION["authenticated"] = 'true';
+    $_SESSION["username"] = 'guest';
+    header('Location: index.php');
+}
+
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>rcms login</title>
 	<link href = "css/bootstrap.min.css" rel = "stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +80,7 @@ endif;
 	  <div class="form-group">
 		<label for="username" class="col-sm-2 control-label">Username</label>
 		<div class="col-sm-4">
-		  <input type="text" name="login" value="<?= isset($_POST["login"]) ? $_POST["login"] : "" ; ?>" id="username" placeholder="username" pattern="[a-zA-Z0-9]{4,}" title="Minmimum 4 letters or numbers required." class="form-control">
+		  <input type="text" name="username" value="<?= isset($_POST["login"]) ? $_POST["login"] : "" ; ?>" id="username" placeholder="username" pattern="[a-zA-Z0-9.]{4,}" title="Minmimum 4 letters or numbers required." class="form-control">
 		</div>
 	  </div>
 	  <div class="form-group">
@@ -51,3 +99,4 @@ endif;
 
 </body>
 </html>
+<?php } ?>

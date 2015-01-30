@@ -1,8 +1,5 @@
 <?php
-include_once("config.php");
-if(!loggedIn()):
-	header('Location: login.php');
-endif;
+require_once('authenticate.php');
 
 $header = "Content-Type: application/json";
 header($header);
@@ -13,5 +10,4 @@ exec( $exec, $out);
 if ($out) {
     print json_encode($out);
 }
-
 ?>

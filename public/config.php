@@ -1,19 +1,17 @@
 <?php
 ob_start();
-error_reporting(E_ALL);
-try
-{
-  $m    = new MongoClient("mongodb://127.0.0.1");
-  $db   = $m->rcms;
-  $coll = $db->users;
-}
-catch (MongoConnectionException $e)
-{
-  die('Error connecting to MongoDB server');
-} 
-catch (MongoException $e) {
-  die('Error: ' . $e->getMessage());
-}
-include_once("functions.php");
-session_start();
+date_default_timezone_set('Europe/Bucharest');
+
+$usersUrl = "data/users.json";
+$jsonUsers = file_get_contents($usersUrl);
+$users = json_decode($jsonUsers, TRUE);
+
+$configUrl = "data/config.json";
+$jsonConfig = file_get_contents($configUrl);
+$config = json_decode($jsonConfig, TRUE);
+
+include("functions.php");
+
+if ($config['debug']) error_reporting(E_ALL);
+
 ?>

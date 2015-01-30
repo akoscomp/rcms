@@ -1,5 +1,6 @@
 body {
  margin-bottom:   80px;
+ //font-size: 13px;
 }/* tables */
 
 
@@ -27,11 +28,10 @@ body {
     background-color: lightblue;     
     min-width: 300px;    
     left: 20px;
-/*    top: 40px; */
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px;
     color: red;
-	text-align: left;
+    text-align: left;
 }
 
 .trigger:hover + .mytooltip {
@@ -67,17 +67,22 @@ th {
   text-align: center;
 }
 
+.boxRow {
+    display: table-row
+}
 .boxLabel {
-    font-size: 18px;
-	color: black;
-	padding: 10px;
-	text-align: left;
+    font-family: "verdana,helvetica,arial,sans-serif";
+    font-size: 12px;
+    color: black;
+    display:table-cell;
+    width: 70px;
 }
 
 .boxText {
-    font-size: 12px;
-	color: gray;
-	text-align: left;
+    font-family: "verdana,helvetica,arial,sans-serif";
+    font-size: 11px;
+    color: black;
+    display:table-cell;
 }
 
 .form-style {
@@ -91,3 +96,83 @@ th {
   list-style: none;
 }
 
+table#table-users span {
+  font-size: 100%;
+}
+
+.akos {
+  padding: 0px;
+  cursor: pointer;
+  background: none repeat scroll 0% 0% transparent;
+  border: 0px none;
+  margin-left: 3px;
+  font-weight: bold;
+  line-height: 1;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 1px 0px rgb(255, 255, 255);
+  opacity: 0.5;
+}
+
+.navbar-btn {
+    margin-left: 8px;
+}
+
+select.form-control {
+    width: auto;
+}
+
+input.roomText {
+  border: 0px none;
+  background: none repeat scroll 0% 0% transparent;
+  
+  text-shadow: 0px 1px 0px rgb(255, 255, 255);
+  opacity: 0.5;
+
+  
+}
+input.roomText:focus {
+    border:1px solid #000;
+    background: white;
+    opacity: 1;
+}
+
+input.form-control {
+    width: auto;
+    float: center;
+}
+
+.spinner {
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+
+  -webkit-transition: opacity 0.25s, width 0.25s;
+  -moz-transition: opacity 0.25s, width 0.25s;
+  -o-transition: opacity 0.25s, width 0.25s;
+  transition: opacity 0.25s, width 0.25s;
+}
+
+.has-spinner.active {
+  cursor:progress;
+}
+
+.has-spinner.active .spinner {
+  opacity: 1;
+  width: auto; /* This doesn't work, just fix for unkown width elements */
+}
+
+.has-spinner.btn-mini.active .spinner {
+    width: 10px;
+}
+
+.has-spinner.btn-small.active .spinner {
+    width: 13px;
+}
+
+.has-spinner.btn.active .spinner {
+    width: 16px;
+}
+
+.has-spinner.btn-large.active .spinner {
+    width: 19px;
+}

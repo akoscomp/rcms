@@ -1,17 +1,89 @@
-function compStartStop(oObject)
+function compStartStop(action, mac, hostname, username, password)
 {
-	alert(oObject.innerHTML);
+    if (action=="Start"){
 	$.ajax(
 	{
 		type: "POST",
-		url: "/rcms/compStartStop.php",
-		data: { mac: oObject.id, button: oObject.innerHTML, room: "room" },
+		url: "/compStartStop.php",
+		data: { mac: mac, button: action, room: "room", hostname: hostname },
 		dataType: "json",
 		async: false,
 		success: function(data) {
-		alert(data);
+                    alert(data);
 		}
 	})
+    }
+    else if (action=="Stop"){
+        $.ajax(
+	{
+		type: "POST",
+		url: "/compStartStop.php",
+		data: { mac: mac, button: action, room: "room", hostname: hostname, username: username, password: password },
+		dataType: "json",
+		async: false,
+		success: function(data) {
+                    if (data) {
+                        alert('Successfull shutdown');
+                    }
+                    else {
+                        alert('Remote shutdown failed');
+                    }
+		}
+	})
+//       alert(username + password);
+    }
+    else if (action=="StartAll"){
+        roomID = mac;
+//        alert(roomID);
+	$.ajax(
+	{
+		type: "POST",
+		url: "/compStartStop.php",
+		data: { mac: '', button: action, room: roomID, hostname: '' },
+		dataType: "json",
+		async: false,
+		success: function(data) {
+                    alert(data);
+		}
+	})
+    }
+    else if (action=="StopAll"){
+        roomID = mac;
+	$.ajax(
+	{
+		type: "POST",
+		url: "/compStartStop.php",
+		data: { mac: '', button: action, room: roomID, hostname: '' },
+		dataType: "json",
+		async: false,
+		success: function(data) {
+                    alert(data);
+		}
+	})
+    }
+    else {
+        alert('Error');
+    }
+}
+
+function refresh()
+{
+    //var img = document.getElementById('refreshSpin');
+    //img.style.display = "";
+    //var btn = document.getElementById('refresh');
+    //$.btn.toggleClass('active');
+    
+    $.ajax(
+    {
+        type: "POST",
+        url: "/refresh.php",
+        data: { },
+        dataType: "json",
+        async: true,
+    }).done(function(data) {
+        //alert(data);
+        window.location.reload(true);
+    });
 }
 
 function bellStartStop(oObject)
@@ -19,7 +91,7 @@ function bellStartStop(oObject)
 	$.ajax(
 	{
 		type: "POST",
-		url: "/rcms/bellStartStop.php",
+		url: "/bellStartStop.php",
 		data: { button: oObject.innerHTML },
 		dataType: "json",
 		async: false,
@@ -42,87 +114,70 @@ function bellStop()
 	$.ajax(
 	{
 		type: "POST",
-		url: "/rcms/bellStartStop.php",
+		url: "/bellStartStop.php",
 		data: { button: "Stop" },
 		dataType: "json",
 		async: true
 	})
 }
 
-/*
-var id = $("button").closest("div").attr("id");  // megadja a jelen gomb szulo div id-jet
-$("button").click(function () {
-    var correctAnswer = $(this).parent().siblings("input[type=hidden]").val();
-    var userAnswer = $(this).parent().siblings("input[type=text]").val();
-    validate(userAnswer, correctAnswer);
-    $("#messages").html(feedback);
-});
-
-*/
-
-/*
-function parseElements() {
-	$('.class_name').each(    //vegeimegy minde class_name calss-u elemen
-		function(index) {  /az indexben megvan, hgoy epp hanyadik elemen vagyok
-			$(this).find('input.serverdatetime').val()    / az aktuaslisaj kijelolt class_name class-u elem serverdatetime class-u imput elemet keresi meg es val-al megadja az ereket, jelen esetben a datumot
-			var d = new Date($(this).find('input.serverdatetime').val());   //ebbol a javascript datumot konvertal ez a postbejegyzes datuma
-			var now = new Date(ServerDateTime); //ez meg a szerverideo
-			
+function groupAddRemove(oObject) {
+if (oObject.dataset.acction=="add") {
+    alert('Add user: ' + oObject.dataset.user + ' to group: ' + oObject.dataset.group);
+    $.ajax(
+	{
+		type: "POST",
+		url: "/admin/groupAddRemove.php",
+		data: { action: 'add', group: oObject.dataset.group, user: oObject.dataset.user },
+		dataType: "json",
+		async: true,
+		success: function(data) {
+                    alert('success');
+                    /*
+                    var button = document.getElementById("ringStartStop");
+			if (data == "1") {
+				button.innerHTML="Stop";
+				button.className="btn btn-lg btn-default btn-danger";
+			}
+			else {
+				button.innerHTML="Start";
+				button.className="btn btn-lg btn-default btn-success";
+			}*/
 		}
-	)
+	})
 }
-*/
-
-/*
-function start(oObject)
-{
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
 else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById("messageBox").innerHTML=xmlhttp.responseText;
-    }
-  }
-
-var ip = document.getElementById("ip").innerHTML;
-xmlhttp.open("GET","start.php?mac="+oObject.id+"&ip="+ip,true);
-xmlhttp.send();
+    alert('Remove user: ' + oObject.dataset.user + ' from group: ' + oObject.dataset.group);
 }
-*/
 
-/*
-function startComp(oObject)
+function compListJson()
 {
-document.getElementById('spin').style.visibility = 'visible';
-document.getElementById("messageBox").innerHTML = 'Please wait...';
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById('spin').style.visibility = 'hidden';
-    document.getElementById("messageBox").innerHTML=xmlhttp.responseText;
-    }
-  }
-
-var ip = document.getElementById("ip").innerHTML;
-var room = document.getElementById('startall').getAttribute('data-room');
-xmlhttp.open("GET","startall.php?room="+room+"&ip="+ip,true);
-xmlhttp.send();
+ var table = $('#rooms').tableToJSON();
+ alert(JSON.stringify(table));  
 }
-*/
+
+function netstartstop(oObject) {
+    var room = document.getElementById(oObject.id).getAttribute('data-room');
+    var stat = document.getElementById(oObject.id).getAttribute('data-stat');
+    $.ajax(
+    {
+        type: "POST",
+        url: "netstartstop.php",
+        data: { room: room, stat: stat},
+        dataType: "json",
+        async: false,
+        success: function(data) {
+                var button = document.getElementById("netstartstopbt");
+                if (data == "1") {
+                    button.innerHTML="Stop";
+                    button.className="btn btn-default btn-danger";
+                    button.setAttribute("data-stat", "start");
+                }
+                else {
+                    button.innerHTML="Start";
+                    button.className="btn btn-default btn-success";
+                    button.setAttribute("data-stat", "stop");
+                }
+            }
+    })
+}

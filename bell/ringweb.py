@@ -1,20 +1,14 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-import smbus
-
+from time import sleep
+import pifacedigitalio
 import sys
-bus = smbus.SMBus(1)
-address = 0x58
 
-try:
-    sys.argv[1]
-except:
-    print "Not OK"
+p = pifacedigitalio.PiFaceDigital()
+
+if sys.argv[1] == "Start":
+    p.leds[0].turn_on()
+    p.leds[1].turn_on()
 else:
-    if sys.argv[1] == "Start":
-        bus.write_byte_data(address, 0x10, 3)
-	print "1"
-    else:
-        bus.write_byte_data(address, 0x10, 0)
-        print "0"
+    p.output_port.all_off()
+
+print p.output_pins[1].value
+#print sys.argv[1]

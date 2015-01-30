@@ -27,8 +27,7 @@ foreach ($list2 as $key2) {
 
 foreach ($list as $key) {
 	if ($key['hostname'] == "") {
-echo		gethostbyaddr( $key['ip'] );
-		
+		gethostbyaddr( $key['ip'] );
 	}
 }
 */
